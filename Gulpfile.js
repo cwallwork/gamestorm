@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     notify = require('gulp-notify'),
     babel = require('gulp-babel'),
-    react = require('gulp-react')
+    react = require('gulp-react'),
+    browserify = require('browserify')
 
 gulp.task('jsx', function() {
   return gulp.src('jsx/*.jsx')
@@ -17,5 +18,5 @@ gulp.task('watch', function() {
   gulp.watch('jsx/*', ['jsx']);
 });
 
-gulp.task('default', ['jsx', 'watch']);
-gulp.task('buildProd', ['jsx']);
+// gulp.task('default', ['jsx', 'watch']);
+// gulp.task('buildProd', ['jsx']);
