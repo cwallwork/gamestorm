@@ -11,12 +11,12 @@
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
     <%= stylesheet_link_tag :site %>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
-    <%= javascript_include_tag :all %>
+    <script src="https://cdn.thegroundwork.com/groundworkjs/0.3.2/groundwork.min.js"></script>
+    <script src="/javascripts/querystring.min.js"></script>
   </head>
 
   <body class="<%= page_classes %>">
     <%= yield %>
+    <%= javascript_include_tag :all, :async => true %>
   </body>
 </html>
