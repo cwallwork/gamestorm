@@ -3,3 +3,5 @@ s3_secret: <%= ENV['S3_SECRET_KEY'] %>
 s3_bucket: caeet-staging
 
 s3_endpoint: us-east-1
+
+site: "../../build"

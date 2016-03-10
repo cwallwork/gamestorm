@@ -17,18 +17,18 @@ window.testColor.setColor = function(){
 
 const Poll = React.createClass({
   getInitialState() {
-    let color = this.setColor();
+    let queries = querystring.parse() || {};
       return {
           questions: [
 
               { 
                 id: 1,
-                q: "Do you support the efforts of organizations like the UN Refugee Agency to serve people around the world who have been forced to flee their homes due to war, persecution and threats",
+                q: "Do you support the efforts of organizations like the UN Refugee Agency to serve people around the world who have been forced to flee their homes due to war, persecution and threats?",
                 answers:[ "Yes","No","I don't know"],
               },
               { 
                 id: 2,
-                q: "Do you support or oppose the following statement?  The United States government and businesses can do more to develop innovative ways of solving the refugee crisis?",
+                q: "Do you support or oppose the following statement?  The United States government and businesses can do more to develop innovative ways of solving the refugee crisis.",
                 answers:["Strongly oppose","Somewhat oppose","Neither support nor oppose","Somewhat support","Strongly support"]
               },
               {
@@ -52,7 +52,8 @@ const Poll = React.createClass({
           gw: new Groundwork ({ 'api_url': 'https://api.thegroundwork.com',
             'oauth_client_id': 'pub-un-test.caeet--l5KRHVi1lzqT3mwtfOvRffZa28dKyOEzWFOc_c7NZJwDrOYT5n9lcMlG0.kg7QN9cpeKpe4x2ymN6M54AWLJbw'
           }),
-          queries: querystring.parse() || {},
+          queries: queries,
+          needZip: queries.haz || true,
           supporterData: {
             source: "CAEET poll",
             tags: {
@@ -61,10 +62,6 @@ const Poll = React.createClass({
           },
           color: testColor
       };
-  },
-
-  setColor: function(){
-   
   },
 
   nextQ: function(){
@@ -94,7 +91,7 @@ const Poll = React.createClass({
 
   endQuiz: function(){
       this.sendData();
-      return <Thanks addZip={this.addZip} hasZip={this.haszip()} />
+      return <Thanks addZip={this.addZip} hasZip={this.state.needZip} />
   },
 
   addZip: function(zip){
@@ -102,7 +99,8 @@ const Poll = React.createClass({
     supDat.postalCode = zip;
     this.setState({
       supporterData: supDat
-    })
+    });
+    this.setState({needZip: false});
   },
 
   haszip: function(){
@@ -217,7 +215,7 @@ const Thanks = React.createClass({
   render: function(){
     return (
       <div className="thanks">Thanks for taking the poll
-        { this.props.hasZip !== true ? this.zipForm() : null }
+        { this.props.hasZip == true ? this.zipForm() : null }
       </div>
     )
   }

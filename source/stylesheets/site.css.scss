@@ -104,6 +104,17 @@ $bodyFont: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 .thanks{
   font-size: 1.5em;
   padding: 1em;
+    & button{
+    margin-left: 0.5em;
+    font-size: 0.7em;
+    background-color: white;
+    border: solid 1px black;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+      background-color: black;
+      color: white;
+    }
+  }
 }
 
 html {
