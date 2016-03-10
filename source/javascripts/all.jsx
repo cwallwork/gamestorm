@@ -113,6 +113,7 @@ const Poll = React.createClass({
     this.state.queries.uid ? data.externalId = this.state.queries.uid : null;
     data.tags.answers = this.state.answers;
     data.tags.color = this.state.color.colName;
+    data.source = data.source + " " + this.state.color.colName;
     this.state.gw.supporters.create(data)
     .then(function(response) {console.log(response)})
     .catch(function(response) {console.log(response)});
