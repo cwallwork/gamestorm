@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+bundle exec middleman build
+
+if [ $(git rev-parse --abbrev-ref HEAD) == 'staging' ]; then
+  s3_website push --config-dir ./script/staging
+elif [ $(git rev-parse --abbrev-ref HEAD) == 'live' ]; then
+  s3_website push --config-dir ./script/production
+else
+  echo 'Invalid branch. you can only publish from staging or live.'
+  exit 1
+fi

@@ -37,16 +37,26 @@ end
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
+  # gzip assets on build
+  activate :gzip
 end
 
 # gulp for jsx
 
-activate :external_pipeline,
-  name: :gulp,
-  command: build? ? './node_modules/gulp/bin/gulp.js buildProd' : './node_modules/gulp/bin/gulp.js default',
-  source: '.tmp/dist'
+# activate :external_pipeline,
+#   name: :gulp,
+#   command: build? ? './node_modules/gulp/bin/gulp.js buildProd' : './node_modules/gulp/bin/gulp.js default',
+#   source: '.tmp/dist'
 
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+  source: '.tmp/dist',
+  latency: 1
+
+ignore 'javascripts/*.jsx'
