@@ -109,14 +109,19 @@ const Poll = React.createClass({
   },
 
   sendData: function(){
-    let data = this.state.supporterData;
+    let data = {
+      source: this.state.supporterData.source + " " + this.state.color.colName,
+      tags: {
+        send_email: 0,
+        answers: this.state.answers,
+        color: this.state.color.colName
+      }
+    };
     this.state.queries.uid ? data.externalId = this.state.queries.uid : null;
-    data.tags.answers = this.state.answers;
-    data.tags.color = this.state.color.colName;
-    data.source = data.source + " " + this.state.color.colName;
+    this.state.supporterData.postalCode ? data.postalCode = this.state.supporterData.postalCode : null;
     this.state.gw.supporters.create(data)
-    .then(function(response) {console.log(response)})
-    .catch(function(response) {console.log(response)});
+    .then(function(response) {console.log("sent")})
+    .catch(function(response) {console.log("not sent")});
   },
 
   introText: function(){
