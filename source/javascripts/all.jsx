@@ -18,6 +18,7 @@ window.testColor.setColor = function(){
 const Poll = React.createClass({
   getInitialState() {
     let queries = querystring.parse() || {};
+    let needZip = queries.haz ? false : true;
       return {
           questions: [
 
@@ -53,7 +54,7 @@ const Poll = React.createClass({
             'oauth_client_id': 'pub-un.cross-audience-email-engagement--WsUMROq5cy8Q3wCZPew4TaUDSsbH9D3.FF8mFVLOfModiOajBnGbBA7DtqtZSIgTOTRmcmw4ytRMc7Tr1e99_w'
           }),
           queries: queries,
-          needZip: queries.haz || true,
+          needZip: needZip,
           supporterData: {
             source: "CAEET poll",
             tags: {
