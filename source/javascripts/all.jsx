@@ -11,7 +11,7 @@ class Gamestorm extends React.Component {
         this.handleResize = this.handleResize.bind(this);
         this.state = {
           groundwork: new Groundwork ({ 'apiUrl': 'https://api.thegroundwork.com',
-            'apiKey': 'pub-un-test.gamestorm--QJiwH1dUrmw1pKSLU4OQXWOZkHmwsDCcbGMc0lDMGqr8Zxm6FBKqZDRKnQL3fsc2dJQHxheTxt7_.mC1nCc8Tg'
+            'apiKey': 'pub-un.gamestorm--OzEG9_jYxgytLt1wF85ciULS9pb4rHw2YSnL8Cxsrn7tk9eddOx2LJPi80SpoSaWtyZJOKbQc8UPN21vk2_hxw'
           }),
           signedUp: false,
           errors: "",
