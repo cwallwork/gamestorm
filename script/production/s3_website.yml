@@ -3,6 +3,6 @@ s3_secret: <%= ENV['S3_SECRET_KEY'] %>
 s3_bucket: refugeegamestorm.com
 
 s3_endpoint: us-east-1
-cloudfront_distribution_id:
+cloudfront_distribution_id: E29WXCGYY7PZE6
 
 site: "../../build"
