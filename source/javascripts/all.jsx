@@ -23,17 +23,18 @@ class Gamestorm extends React.Component {
     handleSignup(formData){
       let payload = {};
       payload.email = formData.email;
+      formData.affiliation !== "" ? payload.tags = {affiliation: formData.affiliation} : null;
       let names = this.separateNames(formData.name);
       _.merge(payload,names);
       this.sendData(payload);
     }
 
     separateNames(name){
-        let nameArr = name.split(" ");
+        var nameArr = name.split(" ");
         let givenName = nameArr[0];
 
         if (nameArr.length > 1) {
-          let familyName = "";
+          var familyName = "";
 
           for (let i = 1; i< nameArr.length; i++) {
             familyName = familyName + " " + nameArr[i];
@@ -47,14 +48,17 @@ class Gamestorm extends React.Component {
 
     sendData(payload){
       payload.source = "Gamestorm signup";
-      payload.tags = { "send_email": 0 };
+      payload.tags = payload.tags || {};
+      payload.tags.send_email = 0 ;
 
       this.state.groundwork.supporters.create(payload)
       .then(function(response){
+        console.log(response);
         this.setState({signedUp: true});
         this.setState({errors: ""});
       }.bind(this))
       .catch(function(response){
+        console.log(response);
         this.setState({errors: response.data.error.msg[0]})
       }.bind(this));
     }
@@ -122,7 +126,10 @@ class Gamestorm extends React.Component {
                       <div className="bottom_paragraph">
                         <h3>Big imaginations wanted.</h3>
                         <p>
-                          Let’s play a game and challenge other smart people to take on the global refugee crisis, too. No experience working with refugees or humanitarian crises required.
+                          Let’s play a game and challenge other smart people to take on the global refugee crisis, too.
+                        </p>
+                        <p>
+                          No experience working with refugees or humanitarian crises required.
                         </p>
                         <h2>You in?</h2>
                       </div>
@@ -141,7 +148,8 @@ class Signup extends React.Component {
         this.displayName = 'Signup';
         this.state = {
             name: "",
-            email: ""
+            email: "",
+            affiliation: ""
         }
     }
 
@@ -155,7 +163,8 @@ class Signup extends React.Component {
       event.preventDefault();
       let formData = {
         name: this.state.name,
-        email: this.state.email
+        email: this.state.email,
+        affiliation: this.state.affiliation
       }
       this.props.submitForm(formData);
     }
@@ -169,6 +178,8 @@ class Signup extends React.Component {
                   <input type="email" required value={this.state.email} onChange={this.update.bind(this,"email")}/>
                   <label>Name<span style={{color: "red"}}>*</span></label>
                   <input type="text" required value={this.state.name} onChange={this.update.bind(this,"name")}/>
+                  <label>Affiliation</label>
+                  <input type="text" value={this.state.affiliation} onChange={this.update.bind(this,"affiliation")}/>
                   <button onClick={(e) => {this.handleForm(e)}}>Submit</button>
                 </form>
               </div>
