@@ -15,8 +15,8 @@ class Gamestorm extends React.Component {
           }),
           signedUp: false,
           errors: "",
-          windowMobile: window.matchMedia("(max-width: 1500px)"),
-          mobile: window.matchMedia("(max-width: 1500px)").matches
+          windowMobile: window.matchMedia("(max-width: 1000px)"),
+          mobile: window.matchMedia("(max-width: 1000px)").matches
         };
     }
 
@@ -87,7 +87,7 @@ class Gamestorm extends React.Component {
 
     getPic(size){
       if( (size === "small" && this.state.mobile === true) || (size === "large" && this.state.mobile === false)){
-        return <img className="cards_image" src="/images/cards.png"/>
+        return <img className="cards_image" src="/images/gamestorm.gif"/>
       }
     }
 
@@ -109,22 +109,22 @@ class Gamestorm extends React.Component {
       let picCenter = this.getPic("small");
         return (  
                   <div className="content">
-                    {picLeft}
                     <div className="text_content">
                       <div className="top_paragraph">
                         <img src="/images/gamestormlogo.png"/>
+                        <h2>Solving the refugee crisis.</h2>
+                        <h3>There&#39;s a game for that</h3>
                         <p>
-                          We are looking for the smartest minds in technology, design, innovation, and media to host and ask others to participate in a GameStorm (that’s a game plus a brainstorm).
+                          Complex problems require creative solutions. We are looking to tap minds from the technology, design, media and innovation sectors. 
                         </p>
                       </div>
-                        {picCenter}
+                        <img className="cards_image" src="/images/gamestorm.gif"/>
                       <div className="bottom_paragraph">
+                        <h3>Big imaginations wanted.</h3>
                         <p>
-                          Warning: This is not your average NGO or philanthropy brainstorm. This is a “game” plus “brainstorm” that challenges big imaginations, those with human-centered design experience, a hacker mentality and/or any other sort of skill or passion towards designing solutions to complex challenges to take on the global refugee crisis.
+                          Let’s play a game and challenge other smart people to take on the global refugee crisis, too. No experience working with refugees or humanitarian crises required.
                         </p>
-                        <p>
-                          If this is up your alley and you would like the online version of the GameStorm when ready, leave your details below. 
-                        </p>
+                        <h2>You in?</h2>
                       </div>
                         {signup}
                     </div>
