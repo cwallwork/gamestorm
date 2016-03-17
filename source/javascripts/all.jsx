@@ -116,8 +116,8 @@ class Gamestorm extends React.Component {
                     <div className="text_content">
                       <div className="top_paragraph">
                         <img src="/images/gamestormlogo.png"/>
-                        <h2>Solving the refugee crisis.</h2>
-                        <h3>There&#39;s a game for that</h3>
+                        <h2>Solving the Refugee Crisis.</h2>
+                        <h3>There&#39;s a game for that.</h3>
                         <p>
                           Complex problems require creative solutions. We are looking to tap minds from the technology, design, media and innovation sectors. 
                         </p>
