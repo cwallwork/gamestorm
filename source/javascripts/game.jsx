@@ -14,6 +14,9 @@ class Game extends React.Component {
 
         this.challenges = this.props.challenges;
         this.newGame = this.newGame.bind(this);
+        this.addCard = this.addCard.bind(this);
+
+        this.mapWithIndex = R.addIndex(R.map);
 
         this.state = {
           currentGame: {
@@ -36,13 +39,25 @@ class Game extends React.Component {
       return shuffle(cards)[0];
     }
 
+    addCard(slotIdx, card, challenge) {
+      if (challenge.challenge[slotIdx].type === card.type && !challenge.challenge[slotIdx].id){
+        const setSlotFn = (element,index) => index == slotIdx ? card : element;
+        let newChallenge = this.mapWithIndex(setSlotFn, challenge.challenge);
+        return newChallenge;
+      }
+      else {
+        return challenge;
+      }
+    }
+
     newGame() {
       let newActors = this.get3Cards(this.actors);
       let newTools =  this.get3Cards(this.tools);
-      let newChallenge = this.get1Card(this.challenges);
+      let newChallenge = makeChallenge(this.get1Card(this.challenges));
 
       let newGame = {
-        challenge: newChallenge,
+        challengeId: newChallenge.id,
+        challenge: newChallenge.challenge,
         tools: newTools,
         actors: newActors
       };

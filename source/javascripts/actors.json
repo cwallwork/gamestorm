@@ -2,303 +2,303 @@
   "actors": 
  [
   {
-     "id":"2","actor":"Local government"
+     "id":"2","text":"Local government"
   },
   {
-     "id":"3","actor":"National government"
+     "id":"3","text":"National government"
   },
   {
-     "id":"4","actor":"U.S. government"
+     "id":"4","text":"U.S. government"
   },
   {
-     "id":"5","actor":"UN"
+     "id":"5","text":"UN"
   },
   {
-     "id":"6","actor":"Parents"
+     "id":"6","text":"Parents"
   },
   {
-     "id":"7","actor":"Student"
+     "id":"7","text":"Student"
   },
   {
-     "id":"8","actor":"Community"
+     "id":"8","text":"Community"
   },
   {
-     "id":"9","actor":"Aid Worker"
+     "id":"9","text":"Aid Worker"
   },
   {
-     "id":"10","actor":"Tech company"
+     "id":"10","text":"Tech company"
   },
   {
-     "id":"11","actor":"Private sector"
+     "id":"11","text":"Private sector"
   },
   {
-     "id":"12","actor":"Americans"
+     "id":"12","text":"Americans"
   },
   {
-     "id":"13","actor":"Teachers"
+     "id":"13","text":"Teachers"
   },
   {
-     "id":"14","actor":"Amy Schumer"
+     "id":"14","text":"Amy Schumer"
   },
   {
-     "id":"15","actor":"Angelina Jolie"
+     "id":"15","text":"Angelina Jolie"
   },
   {
-     "id":"16","actor":"Leonardo DiCaprio"
+     "id":"16","text":"Leonardo DiCaprio"
   },
   {
-     "id":"17","actor":"SNL"
+     "id":"17","text":"SNL"
   },
   {
-     "id":"18","actor":"Stephen Colbert"
+     "id":"18","text":"Stephen Colbert"
   },
   {
-     "id":"19","actor":"Jon Stewart"
+     "id":"19","text":"Jon Stewart"
   },
   {
-     "id":"20","actor":"Homeland producers"
+     "id":"20","text":"Homeland producers"
   },
   {
-     "id":"21","actor":"Voters"
+     "id":"21","text":"Voters"
   },
   {
-     "id":"22","actor":"Hillary Clinton"
+     "id":"22","text":"Hillary Clinton"
   },
   {
-     "id":"23","actor":"Donald Trump"
+     "id":"23","text":"Donald Trump"
   },
   {
-     "id":"24","actor":"President Obama"
+     "id":"24","text":"President Obama"
   },
   {
-     "id":"25","actor":"Your governor"
+     "id":"25","text":"Your governor"
   },
   {
-     "id":"26","actor":"Your mayor"
+     "id":"26","text":"Your mayor"
   },
   {
-     "id":"27","actor":"Thrillist"
+     "id":"27","text":"Thrillist"
   },
   {
-     "id":"28","actor":"Uber"
+     "id":"28","text":"Uber"
   },
   {
-     "id":"29","actor":"Lego"
+     "id":"29","text":"Lego"
   },
   {
-     "id":"30","actor":"Airbnb"
+     "id":"30","text":"Airbnb"
   },
   {
-     "id":"31","actor":"Google"
+     "id":"31","text":"Google"
   },
   {
-     "id":"32","actor":"Microsoft"
+     "id":"32","text":"Microsoft"
   },
   {
-     "id":"33","actor":"Bill Gates"
+     "id":"33","text":"Bill Gates"
   },
   {
-     "id":"34","actor":"Elon Musk"
+     "id":"34","text":"Elon Musk"
   },
   {
-     "id":"35","actor":"Malala Yousafzai"
+     "id":"35","text":"Malala Yousafzai"
   },
   {
-     "id":"36","actor":"Elmo"
+     "id":"36","text":"Elmo"
   },
   {
-     "id":"37","actor":"Miss Piggy"
+     "id":"37","text":"Miss Piggy"
   },
   {
-     "id":"38","actor":"YouTube"
+     "id":"38","text":"YouTube"
   },
   {
-     "id":"39","actor":"Ford"
+     "id":"39","text":"Ford"
   },
   {
-     "id":"40","actor":"Samsung"
+     "id":"40","text":"Samsung"
   },
   {
-     "id":"41","actor":"Costco"
+     "id":"41","text":"Costco"
   },
   {
-     "id":"42","actor":"McDonalds"
+     "id":"42","text":"McDonalds"
   },
   {
-     "id":"43","actor":"In N Out"
+     "id":"43","text":"In N Out"
   },
   {
-     "id":"44","actor":"Chipotle"
+     "id":"44","text":"Chipotle"
   },
   {
-     "id":"45","actor":"CVS"
+     "id":"45","text":"CVS"
   },
   {
-     "id":"46","actor":"Visa"
+     "id":"46","text":"Visa"
   },
   {
-     "id":"47","actor":"Mastercard"
+     "id":"47","text":"Mastercard"
   },
   {
-     "id":"48","actor":"Coca Cola"
+     "id":"48","text":"Coca Cola"
   },
   {
-     "id":"49","actor":"Pepsi"
+     "id":"49","text":"Pepsi"
   },
   {
-     "id":"50","actor":"Lyft"
+     "id":"50","text":"Lyft"
   },
   {
-     "id":"51","actor":"New York Times"
+     "id":"51","text":"New York Times"
   },
   {
-     "id":"52","actor":"Washington Post"
+     "id":"52","text":"Washington Post"
   },
   {
-     "id":"53","actor":"CNN"
+     "id":"53","text":"CNN"
   },
   {
-     "id":"54","actor":"Funny or Die"
+     "id":"54","text":"Funny or Die"
   },
   {
-     "id":"55","actor":"ABC"
+     "id":"55","text":"ABC"
   },
   {
-     "id":"56","actor":"BuzzFeed"
+     "id":"56","text":"BuzzFeed"
   },
   {
-     "id":"57","actor":"Bud Light"
+     "id":"57","text":"Bud Light"
   },
   {
-     "id":"58","actor":"LinkedIn"
+     "id":"58","text":"LinkedIn"
   },
   {
-     "id":"59","actor":"Pandora"
+     "id":"59","text":"Pandora"
   },
   {
-     "id":"60","actor":"Spotify"
+     "id":"60","text":"Spotify"
   },
   {
-     "id":"61","actor":"General Mills"
+     "id":"61","text":"General Mills"
   },
   {
-     "id":"62","actor":"United"
+     "id":"62","text":"United"
   },
   {
-     "id":"63","actor":"Apple"
+     "id":"63","text":"Apple"
   },
   {
-     "id":"64","actor":"Oprah"
+     "id":"64","text":"Oprah"
   },
   {
-     "id":"65","actor":"Richard Branson"
+     "id":"65","text":"Richard Branson"
   },
   {
-     "id":"66","actor":"Law Enforcement"
+     "id":"66","text":"Law Enforcement"
   },
   {
-     "id":"67","actor":"Neighbors"
+     "id":"67","text":"Neighbors"
   },
   {
-     "id":"68","actor":"Facebook"
+     "id":"68","text":"Facebook"
   },
   {
-     "id":"69","actor":"Donors"
+     "id":"69","text":"Donors"
   },
   {
-     "id":"70","actor":"Delta"
+     "id":"70","text":"Delta"
   },
   {
-     "id":"71","actor":"Ryan Seacrest"
+     "id":"71","text":"Ryan Seacrest"
   },
   {
-     "id":"72","actor":"Michelle Obama"
+     "id":"72","text":"Michelle Obama"
   },
   {
-     "id":"73","actor":"Twitter"
+     "id":"73","text":"Twitter"
   },
   {
-     "id":"74","actor":"Seamless"
+     "id":"74","text":"Seamless"
   },
   {
-     "id":"75","actor":"Fire Department"
+     "id":"75","text":"Fire Department"
   },
   {
-     "id":"76","actor":"Mark Cuban"
+     "id":"76","text":"Mark Cuban"
   },
   {
-     "id":"77","actor":"Emergency Reponse"
+     "id":"77","text":"Emergency Reponse"
   },
   {
-     "id":"78","actor":"Women"
+     "id":"78","text":"Women"
   },
   {
-     "id":"79","actor":"Planned Parenthood"
+     "id":"79","text":"Planned Parenthood"
   },
   {
-     "id":"80","actor":"Staples"
+     "id":"80","text":"Staples"
   },
   {
-     "id":"81","actor":"Men"
+     "id":"81","text":"Men"
   },
   {
-     "id":"82","actor":"IBM"
+     "id":"82","text":"IBM"
   },
   {
-     "id":"83","actor":"Supreme Court"
+     "id":"83","text":"Supreme Court"
   },
   {
-     "id":"84","actor":"Politicians"
+     "id":"84","text":"Politicians"
   },
   {
-     "id":"85","actor":"FitBit"
+     "id":"85","text":"FitBit"
   },
   {
-     "id":"86","actor":"Nike"
+     "id":"86","text":"Nike"
   },
   {
-     "id":"87","actor":"General Electric"
+     "id":"87","text":"General Electric"
   },
   {
-     "id":"88","actor":"Disney"
+     "id":"88","text":"Disney"
   },
   {
-     "id":"89","actor":"Amazon"
+     "id":"89","text":"Amazon"
   },
   {
-     "id":"90","actor":"Intel"
+     "id":"90","text":"Intel"
   },
   {
-     "id":"91","actor":"Nike"
+     "id":"91","text":"Nike"
   },
   {
-     "id":"92","actor":"Walmart"
+     "id":"92","text":"Walmart"
   },
   {
-     "id":"93","actor":"NASA"
+     "id":"93","text":"NASA"
   },
   {
-     "id":"94","actor":"Whole Foods"
+     "id":"94","text":"Whole Foods"
   },
   {
-     "id":"95","actor":"Health Clinics"
+     "id":"95","text":"Health Clinics"
   },
   {
-     "id":"96","actor":"Kendrick Lamar"
+     "id":"96","text":"Kendrick Lamar"
   },
   {
-     "id":"97","actor":"Adele"
+     "id":"97","text":"Adele"
   },
   {
-     "id":"98","actor":"Taylor Swift"
+     "id":"98","text":"Taylor Swift"
   },
   {
-     "id":"99","actor":"Beyonce"
+     "id":"99","text":"Beyonce"
   },
   {
-     "id":"100","actor":"Martha Stewart"
+     "id":"100","text":"Martha Stewart"
   },
   {
-     "id":"101","actor":"Michael Jordan"
+     "id":"101","text":"Michael Jordan"
   }]
 }
