@@ -8,7 +8,7 @@ module.exports = {
 
   resolve: {
     root : path.join(__dirname, 'source/javascripts'),
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.json']
   },
 
   output: {
@@ -25,7 +25,18 @@ module.exports = {
         query: {
           presets: ['react', 'es2015', 'stage-0']
         }
+      },
+      {
+        test: /\.json?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'json-loader'
       }
     ]
+  },
+
+  externals: {
+    'cheerio': 'window',
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true
   }
 };
