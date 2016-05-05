@@ -6,17 +6,24 @@ class Actors extends React.Component {
         super(props);
         this.displayName = 'Actors';
     }
+
+    handleCard(actorId) {
+      const filterFn = (card) => card.id == actorId;
+      const card = R.filter(filterFn, this.props.cards);
+      this.props.handleCard(card[0]);
+    }
+
     render() {
         const cardEl = R.map((card) => {
           return(
-              <div key={card.id} className="actor_card">
-                {card.actor}
+              <div key={card.id} className="actor_card" onClick={(e) => this.handleCard(card.id)}>
+                {card.text}
               </div>
             )
         })
 
         return ( 
-        <div className="actor_cards" onClick={this.handleCardClick}>
+        <div className="actor_cards">
           {cardEl(this.props.cards)}
         </div>
         )

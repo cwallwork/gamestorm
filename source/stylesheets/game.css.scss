@@ -12,4 +12,29 @@
     margin: 0 0.5em 0 0.5em;
     border-bottom: solid 2px grey;
   }
+  .selected{
+    border: solid 2px red;
+  }
+}
+
+.cards {
+  display: flex;
+}
+
+.actors {
+    display: flex;
+    width: 50%;
+  & .actor_card {
+    padding: 1em;
+    background-color: lighten(grey, 20%);
+
+    &:hover {
+      color: white;
+    }
+  }
+
+}
+
+.tools {
+
 }
